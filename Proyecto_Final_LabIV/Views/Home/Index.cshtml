@@ -1,0 +1,57 @@
+﻿@model List<Proyecto_Final_LabIV.Models.Tarea>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    // Las tarea las ordene por la FechaFin, para que primero aparezcan las que ya estan por finalizar.
+    var tareasOrdenadas = Model.OrderBy(t => t.DetalleTarea.FechaFin).ToList();
+}
+
+<div class="container">
+    <h1 class="text-center m-5">Tareas</h1>
+
+    @if (tareasOrdenadas.Any())
+    {
+        <div class="row">
+            @foreach (var tarea in tareasOrdenadas)
+            {
+                <div class="col-md-4">
+                    <div class="card shadow-sm m-3" style="">
+                        <div class="card-body text-center">
+                            @if (!string.IsNullOrEmpty(tarea.Usuario.Foto))
+                            {
+                                <img src="~/fotos/@tarea.Usuario.Foto" class="img-fluid mx-auto rounded-circle" style="max-width:100px; max-height:100px;" />
+                            }
+                            <h5 class="card-title">@tarea.Usuario.NombreCompleto</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Usuario</h6>
+                        </div>
+                        <div class="card-body text-left">
+                            <h5 class="card-title" style="margin-top: 10px;">@tarea.Titulo</h5>
+                            <ul class="list-unstyled">
+                                <li>Prioridad: @tarea.Prioridad.Nombre</li>
+                                <li>Estado: @tarea.Estado.Nombre</li>
+                                <li>@tarea.DetalleTarea.Descripcion</li>
+                                <li>Fecha Inicio: @tarea.DetalleTarea.FechaInicio</li>
+                                <li>Fecha Fin: @tarea.DetalleTarea.FechaFin</li>
+                            </ul>
+                            <form asp-action="CompletarTarea" asp-controller="Home" method="post">
+                                <input type="hidden" name="tareaId" value="@tarea.Id" />
+                                <button type="submit" class="btn btn-success">Tarea Completada</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info" role="alert">
+            No hay tareas por realizar.
+        </div>
+    }
+</div>
+<br />
+<br />

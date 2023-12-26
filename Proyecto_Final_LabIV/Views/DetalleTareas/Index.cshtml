@@ -1,0 +1,56 @@
+﻿@* @model IEnumerable<Proyecto_Final_LabIV.Models.DetalleTarea> *@
+
+@model Proyecto_Final_LabIV.ModelView.DetalleTareaVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Detalles de Tarea</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.detallesTarea[0].Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.detallesTarea[0].FechaInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.detallesTarea[0].FechaFin)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.detallesTarea) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaFin)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">
+                        <i class="bi bi-pencil"></i>
+                    </a> |
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">
+                        <i class="bi bi-info-circle"></i>
+                    </a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">
+                        <i class="bi bi-trash"></i>
+                    </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<partial name="_Paginador" for="@Model.paginador" />

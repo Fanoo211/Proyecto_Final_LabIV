@@ -1,0 +1,139 @@
+﻿@* @model IEnumerable<Proyecto_Final_LabIV.Models.Tarea> *@
+
+@model Proyecto_Final_LabIV.ModelView.TareaVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Tareas</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
+</p>
+
+<br />
+<form>
+    <div class="row">
+        <div class="col-3">
+            Prioridad:
+            <select class="form-select" asp-for="busqPrioridadId" asp-items="@Model.ListPrioridad">
+                <option value="">Todos</option>
+            </select>
+        </div>
+        <div class="col-3">
+            Estado:
+            <select class="form-select" asp-for="busqEstadoId" asp-items="@Model.ListEstado">
+                <option value="">Todos</option>
+            </select>
+        </div>
+        <div class="col-3">
+            Apellido:
+            <select class="form-select" asp-for="busqUsuarioId" asp-items="@Model.ListUsuario">
+                <option value="">Todos</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <br />
+            <input class="btn btn-celeste-oscuro" type="submit" value="Buscar" />
+            <a asp-action="Index" class="btn btn-negro">Limpiar</a>
+
+        </div>
+    </div>
+</form>
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.tareas[0].Titulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tareas[0].Prioridad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tareas[0].Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tareas[0].Usuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tareas[0].DetalleTarea)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.tareas) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prioridad.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado.Nombre)
+            </td>
+            <td>
+                @($"{item.Usuario.Nombre} {item.Usuario.Apellido}")
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DetalleTarea.Descripcion)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">
+                    <i class="bi bi-pencil"></i>
+                </a> |
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">
+                    <i class="bi bi-info-circle"></i>
+                </a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">
+                    <i class="bi bi-trash"></i>
+                </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<partial name="_Paginador" for="@Model.paginador" />
+
+
+<style>
+    .btn-celeste-oscuro,
+    .btn-celeste-oscuro:hover {
+        background-color: #007BFF; 
+        border-color: #007BFF;
+        color: #fff; 
+    }
+
+        .btn-celeste-oscuro:hover {
+            background-color: #0056b3; 
+            border-color: #0056b3;
+        }
+
+    .btn-celeste-claro,
+    .btn-celeste-claro:hover {
+        background-color: #5bc0de; 
+        border-color: #5bc0de;
+        color: #fff; 
+    }
+
+        .btn-celeste-claro:hover {
+            background-color: #31b0d5; 
+            border-color: #31b0d5;
+        }
+
+    .btn-negro,
+    .btn-negro:hover {
+        background-color: #000; 
+        border-color: #000;
+        color: #fff; 
+    }
+
+        .btn-negro:hover {
+            background-color: #333; 
+            border-color: #333;
+        }
+</style>

@@ -1,0 +1,157 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Proyecto_Final_LabIV
+build_property.RootNamespace = Proyecto_Final_LabIV
+build_property.ProjectDir = C:\Users\usuario\OneDrive\Materias\2° cuatrimestre\Laboratorio de Computación IV\Proyecto_Final_LabIV\Proyecto_Final_LabIV\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\usuario\OneDrive\Materias\2° cuatrimestre\Laboratorio de Computación IV\Proyecto_Final_LabIV\Proyecto_Final_LabIV
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/DetalleTareas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVRhcmVhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/DetalleTareas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVRhcmVhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/DetalleTareas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVRhcmVhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/DetalleTareas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVRhcmVhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/DetalleTareas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVRhcmVhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Estados/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Estados/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Estados/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Estados/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Estados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Prioridades/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpb3JpZGFkZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Prioridades/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpb3JpZGFkZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Prioridades/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpb3JpZGFkZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Prioridades/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpb3JpZGFkZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Prioridades/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpb3JpZGFkZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Shared/_Paginador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYWdpbmFkb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Tareas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZWFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Tareas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZWFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Tareas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZWFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Tareas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZWFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Tareas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZWFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/OneDrive/Materias/2° cuatrimestre/Laboratorio de Computación IV/Proyecto_Final_LabIV/Proyecto_Final_LabIV/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bu50yl0ud9

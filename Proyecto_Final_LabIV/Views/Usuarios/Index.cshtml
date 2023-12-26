@@ -1,0 +1,188 @@
+﻿@* @model IEnumerable<Proyecto_Final_LabIV.Models.Usuario> *@
+
+@model Proyecto_Final_LabIV.ModelView.UsuarioVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Usuarios</h1>
+<div class="form-container d-flex mb-2 flex-row">
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
+    </p>
+    <form class="form">
+        <div class="form-group input-group justify-content-center">
+            <label for="archivo">Exportar Excel de Usuarios</label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2 mb-2" asp-action="ExportarUsuariosAExcel" id="btnExportar">Exportar</button>
+    </form>
+    <form class="form" method="post" asp-action="ImportarUsuariosDesdeExcel" enctype="multipart/form-data">
+        <div class="form-group input-group justify-content-center">
+            <label for="archivo">Importar un archivo Excel:</label>
+            <input type="file" name="excel" id="excel" class="form-control-file mt-2">
+        </div>
+        <button type="submit" class="btn btn-primary mt-2 mb-2" id="btnImportar">Importar</button>
+    </form>
+</div>
+
+@if (!string.IsNullOrEmpty(ViewBag.Mensaje))
+{
+    <div class="alert alert-danger">
+        @ViewBag.Mensaje
+    </div>
+}
+
+<br />
+<form>
+    <div class="row d-flex align-items-end">
+        <div class="col-3">
+            <label for="busqNombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="busqNombre" placeholder="Escribir nombre" name="busqNombre" value="@Model.busqNombre" />
+        </div>
+
+        <div class="col-3">
+            <label for="busqApellido" class="form-label">Apellido:</label>
+            <input type="text" class="form-control" id="busqApellido" placeholder="Escribir apellido" name="busqApellido" value="@Model.busqApellido" />
+        </div>
+
+        <div class="col-3">
+            <label for="busqDNI" class="form-label">DNI:</label>
+            <input type="text" class="form-control" id="busqDNI" placeholder="Escribir dni" name="busqDNI" value="@Model.busqDNI" />
+        </div>
+
+        <div class="col-3">
+            <input class="btn btn-celeste-oscuro" type="submit" value="Buscar" />
+            <a asp-action="Index" class="btn btn-negro">Limpiar</a>
+        </div>
+    </div>
+</form>
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.usuarios[0].Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.usuarios[0].Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.usuarios[0].Correo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.usuarios[0].DNI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.usuarios[0].FechaNacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.usuarios[0].Foto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.usuarios) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Correo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DNI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaNacimiento)
+            </td>
+            <td>
+                @if (!string.IsNullOrEmpty(item.Foto))
+                {
+                    <img src="~/fotos/@item.Foto" style="max-width:50px" />
+                }
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">
+                        <i class="bi bi-pencil"></i>
+                    </a> |
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">
+                        <i class="bi bi-info-circle"></i>
+                    </a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">
+                        <i class="bi bi-trash"></i>
+                    </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<partial name="_Paginador" for="@Model.paginador" />
+
+<style>
+    .btn-celeste-oscuro,
+    .btn-celeste-oscuro:hover {
+        background-color: #007BFF;
+        border-color: #007BFF;
+        color: #fff;
+    }
+
+        .btn-celeste-oscuro:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+    .btn-celeste-claro,
+    .btn-celeste-claro:hover {
+        background-color: #5bc0de;
+        border-color: #5bc0de;
+        color: #fff;
+    }
+
+        .btn-celeste-claro:hover {
+            background-color: #31b0d5;
+            border-color: #31b0d5;
+        }
+
+    .btn-negro,
+    .btn-negro:hover {
+        background-color: #000;
+        border-color: #000;
+        color: #fff;
+    }
+
+        .btn-negro:hover {
+            background-color: #333;
+            border-color: #333;
+        }
+
+
+    .btn {
+        font-weight: bold;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 0 6rem;
+        height: 8rem;
+        width: 30rem;
+        justify-content: center;
+    }
+
+    .form-container {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 18px;
+    }
+</style>

@@ -1,0 +1,44 @@
+﻿@* @model IEnumerable<Proyecto_Final_LabIV.Models.Prioridad> *@
+
+@model Proyecto_Final_LabIV.ModelView.PrioridadVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Prioridades</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.prioridades[0].Nombre)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.prioridades) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">
+                        <i class="bi bi-pencil"></i>
+                    </a> |
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">
+                        <i class="bi bi-info-circle"></i>
+                    </a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">
+                        <i class="bi bi-trash"></i>
+                    </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<partial name="_Paginador" for="@Model.paginador" />
